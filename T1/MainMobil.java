@@ -1,5 +1,9 @@
+import java.util.Scanner;
+
 public class MainMobil {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
         // instan objek bernama m1
         Mobil m1 = new Mobil();
         m1.setKecepatan(50);
@@ -24,5 +28,22 @@ public class MainMobil {
         
         // menampilkan hasil perubahan
         m1.displayMessage();
+
+        // instan objek baru bernama m3
+        Mobil m3 = new Mobil();
+        System.out.println("Input data mobil 3:");
+        System.out.print("Masukkan kecepatan: ");
+        m3.setKecepatan(input.nextInt());
+        input.nextLine();
+        System.out.print("Masukkan manufaktur: ");
+        m3.setManufaktur(input.nextLine());
+        System.out.print("Masukkan nomor plat: ");
+        m3.setNoPlat(input.nextLine());
+        System.out.print("Masukkan warna: ");
+        m3.setWarna(input.nextLine());
+        m3.displayMessage();
+        System.out.println("================");
+
+        input.close();
     }
 }
