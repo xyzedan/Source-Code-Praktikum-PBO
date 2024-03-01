@@ -4,6 +4,7 @@ public class Mobil {
     private String manufaktur;
     private int kecepatan;
     private double waktu;
+    private int jarak;
 
     public void setNoPlat(String noPlat) {
         this.noPlat = noPlat;
@@ -23,6 +24,10 @@ public class Mobil {
 
     public void setWaktu(double waktu) {
         this.waktu = rubahSecon(waktu);
+    }
+
+    public void hitungJarak() {
+        this.jarak = this.kecepatan * (int) this.waktu;
     }
 
     private double rubahSecon(double waktu) {
