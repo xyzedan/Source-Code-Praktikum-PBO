@@ -22,7 +22,11 @@ public class Mobil {
     }
 
     public void setWaktu(double waktu) {
-        this.waktu = waktu;
+        this.waktu = rubahSecon(waktu);
+    }
+
+    private double rubahSecon(double waktu) {
+        return waktu * 3600; 
     }
 
     public void displayMessage() {
