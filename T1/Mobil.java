@@ -3,6 +3,7 @@ public class Mobil {
     private String warna;
     private String manufaktur;
     private int kecepatan;
+    private double waktu;
 
     public void setNoPlat(String noPlat) {
         this.noPlat = noPlat;
@@ -18,6 +19,10 @@ public class Mobil {
 
     public void setKecepatan(int kecepatan) {
         this.kecepatan = kecepatan;
+    }
+
+    public void setWaktu(double waktu) {
+        this.waktu = waktu;
     }
 
     public void displayMessage() {
