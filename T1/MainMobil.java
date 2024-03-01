@@ -10,6 +10,7 @@ public class MainMobil {
         m1.setManufaktur("Toyota");
         m1.setNoPlat("AB 1231 UA");
         m1.setWarna("Merah");
+        m1.hitungJarak();
         m1.displayMessage();
         System.out.println("================");
 
@@ -19,6 +20,7 @@ public class MainMobil {
         m2.setManufaktur("Mitsubishi");
         m2.setNoPlat("N 1134 AG");
         m2.setWarna("Pink");
+        m2.hitungJarak();
         m2.displayMessage();
         System.out.println("================");
         
@@ -41,6 +43,10 @@ public class MainMobil {
         m3.setNoPlat(input.nextLine());
         System.out.print("Masukkan warna: ");
         m3.setWarna(input.nextLine());
+        System.out.print("Masukkan waktu: ");
+        m3.setWaktu(input.nextInt());
+        input.nextLine();
+        m3.hitungJarak();
         m3.displayMessage();
         System.out.println("================");
 
