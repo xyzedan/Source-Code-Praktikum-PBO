@@ -4,26 +4,26 @@ public class Mobil {
     private String manufaktur;
     private int kecepatan;
 
-    public void setNoPlat(String s) {
-        noPlat = s;
+    public void setNoPlat(String noPlat) {
+        this.noPlat = noPlat;
     }
 
-    public void setWarna(String s) {
-        warna = s;
+    public void setWarna(String warna) {
+        this.warna = warna;
     }
 
-    public void setManufaktur(String s) {
-        manufaktur = s;
+    public void setManufaktur(String manufaktur) {
+        this.manufaktur = manufaktur;
     }
 
-    public void setKecepatan(int i) {
-        kecepatan = i;
+    public void setKecepatan(int kecepatan) {
+        this.kecepatan = kecepatan;
     }
 
     public void displayMessage() {
-        System.out.println("Mobil anda adalah bermerek" + manufaktur);
+        System.out.println("Mobil anda adalah bermerek " + manufaktur);
         System.out.println("mempunyai nomor plat " + noPlat);
         System.out.println("serta memililki warna " + warna);
-        System.out.println("dan mampu menempuh kecepatan" + kecepatan);
+        System.out.println("dan mampu menempuh kecepatan " + kecepatan);
     }
 }
