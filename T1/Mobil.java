@@ -18,7 +18,7 @@ public class Mobil {
     }
 
     public void setKecepatan(int kecepatan) {
-        this.kecepatan = kecepatan;
+        this.kecepatan = (int) rubahKecepatan(kecepatan);
     }
 
     public void setWaktu(double waktu) {
@@ -27,6 +27,10 @@ public class Mobil {
 
     private double rubahSecon(double waktu) {
         return waktu * 3600; 
+    }
+
+    private double rubahKecepatan(int kecepatan) {
+        return (double) kecepatan * 10 / 36; 
     }
 
     public void displayMessage() {
