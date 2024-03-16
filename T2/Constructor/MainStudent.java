@@ -27,5 +27,10 @@ public class MainStudent {
         chris.setAddress("Surabaya");
         chris.setAge(22);
         chris.displayMessage();
+        
+        // contoh objek menggunakan constructor dengan parameter nilai
+        System.out.println("===================");
+        Student jhon = new Student(75.0, 75.0, 75.0);
+        jhon.displayMessage();
     }
 }

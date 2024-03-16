@@ -19,6 +19,12 @@ public class Student {
         age = ag;
     }
 
+    public Student(double mathGrade, double englishGrade, double scienceGrade) {
+        this.mathGrade = mathGrade;
+        this.englishGrade = englishGrade;
+        this.scienceGrade = scienceGrade;
+    }
+
     public void setName(String n) {
         name = n;
     }
