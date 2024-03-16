@@ -19,7 +19,7 @@ public class MainStudent {
 
         //siswa dengan nama anna dirubah informasi alamat dan umurnya melalui constructor
         System.out.println("===================");
-        anna = new student("anna", "Batu", 18);
+        anna = new Student("anna", "Batu", 18);
         anna.displayMessage();
 
         //siswa denagan nama chris dirubah informasi alamat dan umurnya melalui method

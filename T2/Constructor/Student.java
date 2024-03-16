@@ -7,7 +7,7 @@ public class Student {
     private double scienceGrade;
     private double average;
 
-    public student() {
+    public Student() {
         name = "";
         address = "";
         age = 0;
