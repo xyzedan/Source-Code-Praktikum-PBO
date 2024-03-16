@@ -55,10 +55,17 @@ public class Student {
         return result;
     }
 
+    public boolean statusAkhir() {
+        if (getAverage() <= 60) return true;
+        else return false;
+    }
+
     public void displayMessage() {
         System.out.println("Siswa dengan nama "+name);
         System.out.println("beramalat di "+address);
         System.out.println("berumur "+age);
-        System.out.println("mempunyai nilai rata rata"+getAverage());
+        System.out.println("mempunyai nilai rata rata "+getAverage());
+        if (statusAkhir() == false) System.out.println("Siswa lolos!");
+        else System.out.println("Siswa harus remidi!");
     }
 }
