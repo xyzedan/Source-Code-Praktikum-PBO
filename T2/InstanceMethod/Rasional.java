@@ -43,6 +43,18 @@ public class Rasional {
     public boolean moreThan (Rasional A) {
         return (pembilang * A.penyebut > penyebut * A.pembilang);
     }
+
+    public boolean lessThan (Rasional A) {
+        return (pembilang * A.penyebut < penyebut * A.pembilang);
+    }
+
+    public boolean moreThanOrEqual (Rasional A) {
+        return (pembilang * A.penyebut >= penyebut * A.pembilang);
+    }
+
+    public boolean lessThanOrEqual (Rasional A) {
+        return (pembilang * A.penyebut <= penyebut * A.pembilang);
+    }
         
     //operator Unary- ---> A = -A
     public void negasi() {
