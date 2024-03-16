@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MainStudent {
     public static void main(String[] args) {
         Student anna = new Student();
@@ -32,5 +34,30 @@ public class MainStudent {
         System.out.println("===================");
         Student jhon = new Student(75.0, 75.0, 75.0);
         jhon.displayMessage();
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukkan jumlah siswa : ");
+        int jumlahSiswa = input.nextInt(); input.nextLine();
+        Student[] siswa = new Student[jumlahSiswa];
+        for (int i = 0; i < jumlahSiswa; i++) {
+            siswa[i] = new Student();
+
+            System.out.print("Masukkan nama siswa : ");
+            siswa[i].setName(input.nextLine());
+            System.out.print("Masukkan alamat siswa : ");
+            siswa[i].setAddress(input.nextLine());
+            System.out.print("Masukkan umur siswa : ");
+            siswa[i].setAge(input.nextInt()); input.nextLine();
+            System.out.print("Masukkan nilai matematika : ");
+            siswa[i].setMath(input.nextInt()); input.nextLine();
+            System.out.print("Masukkan nilai bahasa inggris : ");
+            siswa[i].setEnglish(input.nextInt()); input.nextLine();
+            System.out.print("Masukkan nilai science : ");
+            siswa[i].setScience(input.nextInt()); input.nextLine();
+            System.out.println("===================");
+            siswa[i].displayMessage();
+            System.out.println("===================");
+        }
+        input.close();
     }
 }
