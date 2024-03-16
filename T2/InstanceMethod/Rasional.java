@@ -66,6 +66,18 @@ public class Rasional {
         pembilang = pembilang * A.penyebut + penyebut * A.pembilang; 
         penyebut *= A.penyebut;
     }
+    public void unaryMinus(Rasional A) {
+        pembilang = pembilang * A.penyebut - penyebut * A.pembilang; 
+        penyebut *= A.penyebut;
+    }
+    public void unaryTimes(Rasional A) {
+        pembilang *= A.pembilang; 
+        penyebut *= A.penyebut;
+    }
+    public void unaryDevidedBy(Rasional A) {
+        pembilang *= A.penyebut; 
+        penyebut *= A.pembilang;
+    }
         
     public void cetak() {
         System.out.println(pembilang + "/" + penyebut);
