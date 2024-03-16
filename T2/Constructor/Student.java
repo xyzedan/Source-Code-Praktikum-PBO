@@ -6,23 +6,27 @@ public class Student {
     private double englishGrade;
     private double scienceGrade;
     private double average;
+    private static int jumlahObjek;
 
     public Student() {
         name = "";
         address = "";
         age = 0;
+        Student.jumlahObjek++;
     }
 
     public Student(String n, String a, int ag) {
         name = n;
         address = a;
         age = ag;
+        Student.jumlahObjek++;
     }
 
     public Student(double mathGrade, double englishGrade, double scienceGrade) {
         this.mathGrade = mathGrade;
         this.englishGrade = englishGrade;
         this.scienceGrade = scienceGrade;
+        Student.jumlahObjek++;
     }
 
     public void setName(String n) {
@@ -58,6 +62,10 @@ public class Student {
     public boolean statusAkhir() {
         if (getAverage() <= 60) return true;
         else return false;
+    }
+
+    public static void getJumlahObjek() {
+        System.out.println("Jumlah objek yang telah dibuat adalah : "+jumlahObjek);
     }
 
     public void displayMessage() {
