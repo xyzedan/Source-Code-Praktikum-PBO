@@ -5,9 +5,9 @@ public class Overloading {
         System.out.println("maka hasil luas : "+nilai);
     }
 
-    public static double HitungLuas(double value, double value2){
+    public static void HitungLuas(double value, double value2){
         double nilai = value* value2;
-        return nilai;
+        System.out.println("Maka hasil luas : "+nilai);
     }
 
     public static void main(String[] args) {
@@ -21,7 +21,6 @@ public class Overloading {
         double double1 = in.nextDouble();
         System.out.print("masukkan nilai double 2 : ");
         double double2 = in.nextDouble();
-        HitungLuas(integer1, integer2);
-        System.out.println("Maka hasil luas : "+HitungLuas(double1, double2));
+        HitungLuas(double1, double2);
     }
 }
