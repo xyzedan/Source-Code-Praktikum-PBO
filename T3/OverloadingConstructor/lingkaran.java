@@ -10,6 +10,11 @@ public class lingkaran {
         this.tinggi = tinggi;
     }
 
+    public lingkaran(String stringAlas, String stringTinggi) {
+        this.alas = rubahString(stringAlas);
+        this.tinggi = rubahString(stringTinggi);
+    }
+
     public void setAlas(int alas){
         this.alas = alas;
     }
@@ -29,6 +34,10 @@ public class lingkaran {
     public double hitungLuas(){
         double hasil = (double)(getTinggi()*getAlas())/2;
         return hasil;
+    }
+
+    public int rubahString(String string) {
+        return Integer.parseInt(string);
     }
 
     public void displayMessage(){

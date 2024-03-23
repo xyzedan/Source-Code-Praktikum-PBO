@@ -5,6 +5,8 @@ public class LingkaranMain {
         l.displayMessage();
         lingkaran l2 = new lingkaran(4, 10);
         l2.displayMessage();
+        lingkaran Lstring = new lingkaran("5", "10");
+        Lstring.displayMessage();
     }
 }
 
